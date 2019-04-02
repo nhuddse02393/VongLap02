@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="List"></p>
+<script>
+    let a = 1;
+    let b = 1;
+    let num = 0;
+    let list = "" + a + " " + b;
+    for(let i = 3; i<30; i++){
+        num = a + b;
+        list += "   "+num;
+        a = b;
+        b = num;
+    }
+    document.getElementById("List").innerHTML = list;
+</script>
+</body>
+</html>

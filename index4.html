@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="Result" style="width: 300px" align="justity"></p>
+<script>
+    let a = parseInt(prompt("Nhap chieu dai:"));
+    let b = parseInt(prompt("Nhap chieu rong:"));
+    let line1 = "";
+    let line2 = "*&nbsp&nbsp";
+    let result = "";
+
+    for(let i=0; i<a; i++)
+        line1 += "*&nbsp&nbsp";
+    for(let j=1; j<a; j++)
+        if(j==a-1)
+            line2 += "*";
+        else
+            line2 += "&nbsp&nbsp&nbsp&nbsp";
+
+    for(let k=0; k<b; k++)
+        if(k==0 || k==b-1)
+            result += line1 + "<br>";
+        else
+            result += line2 + "<br>";
+    document.getElementById("Result").innerHTML = result;
+
+</script>
+</body>
+</html>

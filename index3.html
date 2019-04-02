@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="List1"></p><br><br>
+<p id="List2"></p><br><br>
+<p id="List3" style="width: 40px" align="right"></p><br><br>
+<p id="List4" style="width: 40px" align="right"></p><br><br>
+
+<script>
+let line1 = "";
+let list1 = "";
+for(let i =0; i<=4; i++){
+    line1 += "*";
+    list1 +=  line1 + "<br>";
+}
+document.getElementById("List1").innerHTML = list1;
+
+
+
+let line2 = "*****";
+let list2 = line2 + "<br>";
+for(let i =4; i>0; i--){
+    line2 = line2.slice(0,i);
+    list2 += line2  + "<br>";
+}
+document.getElementById("List2").innerHTML = list2;
+
+let line3 = "";
+let list3 = "";
+for(let i =0; i<=4; i++){
+    line3 += "*";
+    list3 +=  line3 + "<br>";
+}
+document.getElementById("List3").innerHTML = list3;
+
+
+let line4 = "*****";
+let list4 = line4 + "<br>";
+for(let i =4; i>0; i--){
+    line4 = line4.slice(0,i);
+    list4 += line4  + "<br>";
+}
+document.getElementById("List4").innerHTML = list4;
+
+</script>
+</body>
+</html>
